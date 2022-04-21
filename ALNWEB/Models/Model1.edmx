@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ALANSISModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="EO_ALANSIS_SATIS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DURUM" Type="nvarchar" MaxLength="50" />
+          <Property Name="SIPARIS_TURU" Type="nvarchar" MaxLength="50" />
+          <Property Name="SINIF" Type="nvarchar(max)" />
+          <Property Name="NAKLIYE" Type="nvarchar" MaxLength="50" />
+          <Property Name="PARTI" Type="nvarchar" MaxLength="50" />
+          <Property Name="MUSTERI" Type="nvarchar(max)" />
+          <Property Name="ETD" Type="nvarchar(max)" />
+          <Property Name="ETA" Type="nvarchar(max)" />
+          <Property Name="KUTU" Type="nvarchar(max)" />
+          <Property Name="AMBALAJ" Type="nvarchar(max)" />
+          <Property Name="EBAT" Type="nvarchar(max)" />
+          <Property Name="MIN_MEYVE_AGIRLIK" Type="nvarchar(max)" />
+          <Property Name="MIN_KUTU_AGIRLIK" Type="nvarchar(max)" />
+          <Property Name="PALET_ADET" Type="nvarchar(max)" />
+          <Property Name="KUTU_ADET" Type="nvarchar(max)" />
+          <Property Name="TONAJ_KG" Type="nvarchar(max)" />
+          <Property Name="PLT_KUTU" Type="nvarchar(max)" />
+          <Property Name="PALET_TIPI" Type="nvarchar(max)" />
+          <Property Name="ACIKLAMA" Type="nvarchar(max)" />
+          <Property Name="ETIKET" Type="nvarchar(max)" />
+          <Property Name="MUSTERI_REFERANS" Type="nvarchar(max)" />
+          <Property Name="TESLIM_SEKLI" Type="nvarchar(max)" />
+          <Property Name="TESLIM_YERI" Type="nvarchar(max)" />
+          <Property Name="RENK" Type="nvarchar(max)" />
+          <Property Name="STOK_KODU" Type="nvarchar(max)" />
+          <Property Name="STOK_ADI" Type="nvarchar(max)" />
+          <Property Name="SATIS_ONAY" Type="nvarchar" MaxLength="50" />
+          <Property Name="LOJISTIK_ONAY" Type="nvarchar" MaxLength="50" />
+          <Property Name="URETIM_ONAY" Type="nvarchar" MaxLength="50" />
+          <Property Name="KALITE_ONAY" Type="nvarchar" MaxLength="50" />
+          <Property Name="MEYVE_ONAY" Type="nvarchar" MaxLength="50" />
+          <Property Name="ZIRAI_ONAY" Type="nvarchar" MaxLength="50" />
+          <Property Name="SON_ONAY" Type="nvarchar" MaxLength="50" />
+          <Property Name="GGN" Type="nvarchar(max)" />
+          <Property Name="NOK_BIRIM" Type="nvarchar(max)" />
+          <Property Name="URUN" Type="nvarchar" MaxLength="100" />
+          <Property Name="ISEMRI" Type="nchar" MaxLength="1" />
+          <Property Name="SEVK" Type="nchar" MaxLength="1" />
+        </EntityType>
+        <EntityContainer Name="ALANSISModelStoreContainer">
+          <EntitySet Name="EO_ALANSIS_SATIS" EntityType="Self.EO_ALANSIS_SATIS" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ALANSISModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="EO_ALANSIS_SATIS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DURUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SIPARIS_TURU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SINIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NAKLIYE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PARTI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MUSTERI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ETD" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ETA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="KUTU" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AMBALAJ" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EBAT" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MIN_MEYVE_AGIRLIK" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MIN_KUTU_AGIRLIK" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PALET_ADET" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="KUTU_ADET" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TONAJ_KG" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PLT_KUTU" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PALET_TIPI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ACIKLAMA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ETIKET" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MUSTERI_REFERANS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TESLIM_SEKLI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TESLIM_YERI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="RENK" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="STOK_KODU" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="STOK_ADI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SATIS_ONAY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LOJISTIK_ONAY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="URETIM_ONAY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KALITE_ONAY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MEYVE_ONAY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ZIRAI_ONAY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SON_ONAY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GGN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NOK_BIRIM" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="URUN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ISEMRI" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="SEVK" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="ALANSISEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="EO_ALANSIS_SATIS" EntityType="Self.EO_ALANSIS_SATIS" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ALANSISModelStoreContainer" CdmEntityContainer="ALANSISEntities">
+          <EntitySetMapping Name="EO_ALANSIS_SATIS">
+            <EntityTypeMapping TypeName="ALANSISModel.EO_ALANSIS_SATIS">
+              <MappingFragment StoreEntitySet="EO_ALANSIS_SATIS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="SIPARIS_TURU" ColumnName="SIPARIS_TURU" />
+                <ScalarProperty Name="SINIF" ColumnName="SINIF" />
+                <ScalarProperty Name="NAKLIYE" ColumnName="NAKLIYE" />
+                <ScalarProperty Name="PARTI" ColumnName="PARTI" />
+                <ScalarProperty Name="MUSTERI" ColumnName="MUSTERI" />
+                <ScalarProperty Name="ETD" ColumnName="ETD" />
+                <ScalarProperty Name="ETA" ColumnName="ETA" />
+                <ScalarProperty Name="KUTU" ColumnName="KUTU" />
+                <ScalarProperty Name="AMBALAJ" ColumnName="AMBALAJ" />
+                <ScalarProperty Name="EBAT" ColumnName="EBAT" />
+                <ScalarProperty Name="MIN_MEYVE_AGIRLIK" ColumnName="MIN_MEYVE_AGIRLIK" />
+                <ScalarProperty Name="MIN_KUTU_AGIRLIK" ColumnName="MIN_KUTU_AGIRLIK" />
+                <ScalarProperty Name="PALET_ADET" ColumnName="PALET_ADET" />
+                <ScalarProperty Name="KUTU_ADET" ColumnName="KUTU_ADET" />
+                <ScalarProperty Name="TONAJ_KG" ColumnName="TONAJ_KG" />
+                <ScalarProperty Name="PLT_KUTU" ColumnName="PLT_KUTU" />
+                <ScalarProperty Name="PALET_TIPI" ColumnName="PALET_TIPI" />
+                <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+                <ScalarProperty Name="ETIKET" ColumnName="ETIKET" />
+                <ScalarProperty Name="MUSTERI_REFERANS" ColumnName="MUSTERI_REFERANS" />
+                <ScalarProperty Name="TESLIM_SEKLI" ColumnName="TESLIM_SEKLI" />
+                <ScalarProperty Name="TESLIM_YERI" ColumnName="TESLIM_YERI" />
+                <ScalarProperty Name="RENK" ColumnName="RENK" />
+                <ScalarProperty Name="STOK_KODU" ColumnName="STOK_KODU" />
+                <ScalarProperty Name="STOK_ADI" ColumnName="STOK_ADI" />
+                <ScalarProperty Name="SATIS_ONAY" ColumnName="SATIS_ONAY" />
+                <ScalarProperty Name="LOJISTIK_ONAY" ColumnName="LOJISTIK_ONAY" />
+                <ScalarProperty Name="URETIM_ONAY" ColumnName="URETIM_ONAY" />
+                <ScalarProperty Name="KALITE_ONAY" ColumnName="KALITE_ONAY" />
+                <ScalarProperty Name="MEYVE_ONAY" ColumnName="MEYVE_ONAY" />
+                <ScalarProperty Name="ZIRAI_ONAY" ColumnName="ZIRAI_ONAY" />
+                <ScalarProperty Name="SON_ONAY" ColumnName="SON_ONAY" />
+                <ScalarProperty Name="GGN" ColumnName="GGN" />
+                <ScalarProperty Name="NOK_BIRIM" ColumnName="NOK_BIRIM" />
+                <ScalarProperty Name="URUN" ColumnName="URUN" />
+                <ScalarProperty Name="ISEMRI" ColumnName="ISEMRI" />
+                <ScalarProperty Name="SEVK" ColumnName="SEVK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
